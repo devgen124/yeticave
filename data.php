@@ -12,46 +12,46 @@ $user_avatar = 'img/user.jpg';
 $categories = ["Доски и лыжи", "Крепления", "Ботинки", "Одежда", "Инструменты", "Разное"];
 $lots_list = [
     [
-        'name' => '2014 Rossignol District Snowboard',
-        'cat' => $categories[0],
-        'price' => 10999,
-        'img' => 'img/lot-1.jpg',
-        'description' => ''
+        'lot-name' => '2014 Rossignol District Snowboard',
+        'category' => $categories[0],
+        'lot-rate' => 10999,
+        'lot-img' => 'img/lot-1.jpg',
+        'message' => ''
     ],
     [
-        'name' => 'DC Ply Mens 2016/2017 Snowboard',
-        'cat' => $categories[0],
-        'price' => 159999,
-        'img' => 'img/lot-2.jpg',
-        'description' => ''
+        'lot-name' => 'DC Ply Mens 2016/2017 Snowboard',
+        'category' => $categories[0],
+        'lot-rate' => 159999,
+        'lot-img' => 'img/lot-2.jpg',
+        'message' => ''
     ],
     [
-        'name' => 'Крепления Union Contact Pro 2015 года размер L/XL',
-        'cat' => $categories[1],
-        'price' => 8000,
-        'img' => 'img/lot-3.jpg',
-        'description' => ''
+        'lot-name' => 'Крепления Union Contact Pro 2015 года размер L/XL',
+        'category' => $categories[1],
+        'lot-rate' => 8000,
+        'lot-img' => 'img/lot-3.jpg',
+        'message' => ''
     ],
     [
-        'name' => 'Ботинки для сноуборда DC Mutiny Charocal',
-        'cat' => $categories[2],
-        'price' => 10999,
-        'img' => 'img/lot-4.jpg',
-        'description' => ''
+        'lot-name' => 'Ботинки для сноуборда DC Mutiny Charocal',
+        'category' => $categories[2],
+        'lot-rate' => 10999,
+        'lot-img' => 'img/lot-4.jpg',
+        'message' => ''
     ],
     [
-        'name' => 'Куртка для сноуборда DC Mutiny Charocal',
-        'cat' => $categories[3],
-        'price' => 7500,
-        'img' => 'img/lot-5.jpg',
-        'description' => ''
+        'lot-name' => 'Куртка для сноуборда DC Mutiny Charocal',
+        'category' => $categories[3],
+        'lot-rate' => 7500,
+        'lot-img' => 'img/lot-5.jpg',
+        'message' => ''
     ],
     [
-        'name' => 'Маска Oakley Canopy',
-        'cat' => $categories[5],
-        'price' => 5400,
-        'img' => 'img/lot-6.jpg',
-        'description' => ''
+        'lot-name' => 'Маска Oakley Canopy',
+        'category' => $categories[5],
+        'lot-rate' => 5400,
+        'lot-img' => 'img/lot-6.jpg',
+        'message' => ''
     ]
 ];
 ?>
