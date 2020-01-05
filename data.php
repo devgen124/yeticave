@@ -6,8 +6,8 @@ $bets = [
     ['name' => 'Евгений', 'price' => 10500, 'ts' => strtotime('-' . rand(25, 50) .' hour')],
     ['name' => 'Семён', 'price' => 10000, 'ts' => strtotime('last week')]
 ];
-$is_auth = (bool) rand(0, 1);
-$user_name = 'Константин';
+$is_auth = isset($_SESSION['user']);
+$user = $_SESSION['user'];
 $user_avatar = 'img/user.jpg';
 $categories = ["Доски и лыжи", "Крепления", "Ботинки", "Одежда", "Инструменты", "Разное"];
 $lots_list = [
