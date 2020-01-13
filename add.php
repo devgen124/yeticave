@@ -17,8 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $lot = filter_input_array(INPUT_POST, ['lot-name' => FILTER_SANITIZE_STRING,
                                             'category' => FILTER_DEFAULT,
                                             'message' => FILTER_SANITIZE_STRING,
-                                            'lot-rate' => FILTER_DEFAULT,
-                                            'lot-step' => FILTER_DEFAULT,
+                                            'lot-rate' => FILTER_VALIDATE_INT,
+                                            'lot-step' => FILTER_VALIDATE_INT,
                                             'lot-date' => FILTER_DEFAULT], true);
 
 

@@ -13,9 +13,8 @@ if (isset($_GET['lot_id'])) {
     break;
     }
   }
-}
 
-if (isset($_COOKIE['history'])) {
+  if (isset($_COOKIE['history'])) {
     $history = json_decode($_COOKIE['history']);
     if (!in_array($lot_id, $history)) {
         $history[] = $lot_id;
@@ -28,9 +27,11 @@ if (isset($_COOKIE['history'])) {
     setcookie('history', $history_str, time() + 60*60*24*7);
 }
 
-if ($lot) {
-  $title = $lot['name'];
-  $page_content = render_template('lot.php', ['lot' => $lot, 'categories' => $categories]);
+  if ($lot) {
+    $title = $lot['name'];
+    $page_content = render_template('lot.php', ['lot' => $lot, 'categories' => $categories]);
+  }
+
 } else {
   http_response_code(404);
   $title = 'Страница не найдена';
@@ -46,5 +47,4 @@ $layout_content = render_template('layout.php',
     'categories' => $categories]);
 
 print($layout_content);
-print_r($_COOKIE['history']);
 ?>
