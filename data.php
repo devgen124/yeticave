@@ -7,7 +7,7 @@ $bets = [
     ['name' => 'Семён', 'price' => 10000, 'ts' => strtotime('last week')]
 ];
 $is_auth = isset($_SESSION['user']);
-$user = $_SESSION['user'];
+$user = $is_auth ? $_SESSION['user'] : null;
 $user_avatar = 'img/user.jpg';
 $categories = ["Доски и лыжи", "Крепления", "Ботинки", "Одежда", "Инструменты", "Разное"];
 $lots_list = [

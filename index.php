@@ -2,7 +2,6 @@
 require_once ('init.php');
 require_once ('data.php');
 
-session_start();
 $page_content = render_template('main.php', ['lots_list' => $lots_list, 'categories' => $categories]);
 $layout_content = render_template('layout.php',
     ['is_auth' => $is_auth,
